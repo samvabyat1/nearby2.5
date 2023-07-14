@@ -2,16 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import { getDatabase, onValue, ref as ref2, set } from "firebase/database";
 
-import { initializeApp } from "firebase/app";
-const firebaseConfig = {
-  apiKey: "AIzaSyDTX5olg8yvhyMcmhWM86v6HjOMRu3mPNk",
-  authDomain: "nearbys2.firebaseapp.com",
-  projectId: "nearbys2",
-  storageBucket: "nearbys2.appspot.com",
-  messagingSenderId: "716662903466",
-  appId: "1:716662903466:web:178014da41b59e39ba36d3",
-};
-const app = initializeApp(firebaseConfig);
+import app from '../base'
 
 const storage = getStorage(app);
 const db = getDatabase(app);
@@ -69,7 +60,7 @@ export default function Right() {
   }
 
   return (
-    <div className="bg-white flex-1 text-black py-8 px-5 m-1 rounded-xl">
+    <div className="bg-white flex-1 text-black py-8 px-5 m-2 rounded-xl">
       <div className="flex">
         <button
           className="bg-black px-8 py-6 rounded-xl text-yellow-500 mr-5 disabled:bg-gray-600"

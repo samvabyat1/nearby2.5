@@ -8,14 +8,14 @@ import Right from "./Components/Right";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App max-w-5xl m-auto">
       <Nav />
       <div className="section">
-        <div className="row sm:flex mx-1">
+        <div className="row sm:flex mx-2">
           <Intro />
           <Jack />
         </div>
-        <div className="row sm:flex mx-1">
+        <div className="row sm:flex mx-2">
           <Left />
           <Right />
         </div>

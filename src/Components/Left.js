@@ -6,17 +6,7 @@ import {
   ref,
   set,
 } from "firebase/database";
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDTX5olg8yvhyMcmhWM86v6HjOMRu3mPNk",
-  authDomain: "nearbys2.firebaseapp.com",
-  projectId: "nearbys2",
-  storageBucket: "nearbys2.appspot.com",
-  messagingSenderId: "716662903466",
-  appId: "1:716662903466:web:178014da41b59e39ba36d3",
-};
-const app = initializeApp(firebaseConfig);
+import app from '../base'
 
 const db = getDatabase(app);
 
@@ -48,7 +38,7 @@ export default function Left() {
   }
 
   return (
-    <div className="bg-amber-100 flex-1 text-black py-8 px-5 m-1 rounded-xl ">
+    <div className="bg-amber-100 flex-1 text-black py-8 px-5 m-2 rounded-xl ">
       <div className="flex flex-row-reverse">
         <button
           className="bg-black px-8 py-6 rounded-r-xl text-white"

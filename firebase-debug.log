@@ -1,0 +1,68 @@
+[debug] [2023-07-14T16:18:36.482Z] ----------------------------------------------------------------------
+[debug] [2023-07-14T16:18:36.485Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\samva\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-07-14T16:18:36.486Z] CLI Version:   11.25.1
+[debug] [2023-07-14T16:18:36.487Z] Platform:      win32
+[debug] [2023-07-14T16:18:36.487Z] Node Version:  v16.17.0
+[debug] [2023-07-14T16:18:36.495Z] Time:          Fri Jul 14 2023 21:48:36 GMT+0530 (India Standard Time)
+[debug] [2023-07-14T16:18:36.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-14T16:18:36.623Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-14T16:18:36.624Z] > authorizing via signed-in user (samvabyav0@gmail.com)
+[debug] [2023-07-14T16:18:36.624Z] [iam] checking project nearbys2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-14T16:18:36.626Z] > refreshing access token with scopes: []
+[debug] [2023-07-14T16:18:36.628Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-14T16:18:36.629Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-14T16:18:37.387Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-14T16:18:37.388Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-14T16:18:37.400Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/nearbys2:testIamPermissions [none]
+[debug] [2023-07-14T16:18:37.400Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/nearbys2:testIamPermissions x-goog-quota-user=projects/nearbys2
+[debug] [2023-07-14T16:18:37.401Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nearbys2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T16:18:39.638Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/nearbys2:testIamPermissions 200
+[debug] [2023-07-14T16:18:39.639Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/nearbys2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-14T16:18:39.641Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nearbys2 [none]
+[debug] [2023-07-14T16:18:40.882Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nearbys2 200
+[debug] [2023-07-14T16:18:40.883Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nearbys2 {"projectId":"nearbys2","projectNumber":"716662903466","displayName":"Nearby","name":"projects/nearbys2","resources":{"hostingSite":"nearbys2","realtimeDatabaseInstance":"nearbys2-default-rtdb","storageBucket":"nearbys2.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d8b42ca9-327e-4771-aafb-f48610742269"}
+[info] 
+[info] === Deploying to 'nearbys2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-07-14T16:18:40.895Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nearbys2/versions [none]
+[debug] [2023-07-14T16:18:40.895Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nearbys2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-07-14T16:18:42.877Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nearbys2/versions 200
+[debug] [2023-07-14T16:18:42.878Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/nearbys2/versions {"name":"projects/716662903466/sites/nearbys2/versions/a7778860866959c7","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[nearbys2]: beginning deploy... 
+[info] i  hosting[nearbys2]: found 15 files in build 
+[debug] [2023-07-14T16:18:42.903Z] [hosting] uploading with 200 concurrency
+[debug] [2023-07-14T16:18:43.285Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2023-07-14T16:18:43.286Z] [hosting][hash queue][FINAL] {"max":360,"min":9,"avg":43.4,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":376}
+[debug] [2023-07-14T16:18:43.286Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/716662903466/sites/nearbys2/versions/a7778860866959c7:populateFiles [none]
+[debug] [2023-07-14T16:18:43.287Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/716662903466/sites/nearbys2/versions/a7778860866959c7:populateFiles {"files":{"/favicon.ico":"12091c22f47828e12a28439c42249f4d3970f6c684ec8edb261e9a40efd5aa9f","/logo192.png":"f2a5252788ce499248419516d61b935c14792d2158d06dde8538beb772ff6352","/logo512.png":"613059c0fdc2bdf38ff79a0aaed5fa3cbde01c9327304a0b9f4ff212fb7e40ea","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/index.html":"52aa9cd881a20e063b758ad368e341c910dfe595ade78876dc380c67033820d5","/asset-manifest.json":"ae32d499ca981e4e30a52b148f95b8a8528e798a2399c766636d0463a1086651","/static/css/main.beeef6a5.css":"99d5650803a9e9f2e64eb5726f7f6c3237a60d598db0a65c574205d3eac96536","/static/css/main.beeef6a5.css.map":"ff31bd1f88551a9807504db42c8eb56248fb7c0a1b7e8dfc5ff4c8ebe1645747","/static/js/787.4fe6af3d.chunk.js":"662c6af15204eddd5115f11fd8e7b60b9b4c62e34e4def68125ca1a150dea5f0","/static/js/787.4fe6af3d.chunk.js.map":"221d11e3b43174631aa2af705e3eb42dcdc65059857c88cacb0522fb08f84d5f","/static/js/main.d526bcce.js.LICENSE.txt":"25ee829c4c7d07e6a6d75657e6ff5d9067c513385bec6affe0590be98639e349","/static/media/favicon.6668cc691a1d36e943c6.ico":"12091c22f47828e12a28439c42249f4d3970f6c684ec8edb261e9a40efd5aa9f","/static/js/main.d526bcce.js":"999333e8af2fcf9d79a53f4d658b2b0f0796615bd09c903f4eb762b53021f6e9","/static/js/main.d526bcce.js.map":"0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4"}}
+[debug] [2023-07-14T16:18:44.594Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/716662903466/sites/nearbys2/versions/a7778860866959c7:populateFiles 200
+[debug] [2023-07-14T16:18:44.594Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/716662903466/sites/nearbys2/versions/a7778860866959c7:populateFiles {"uploadRequiredHashes":["ff31bd1f88551a9807504db42c8eb56248fb7c0a1b7e8dfc5ff4c8ebe1645747","99d5650803a9e9f2e64eb5726f7f6c3237a60d598db0a65c574205d3eac96536","999333e8af2fcf9d79a53f4d658b2b0f0796615bd09c903f4eb762b53021f6e9","52aa9cd881a20e063b758ad368e341c910dfe595ade78876dc380c67033820d5","ae32d499ca981e4e30a52b148f95b8a8528e798a2399c766636d0463a1086651","0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files"}
+[debug] [2023-07-14T16:18:44.596Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ff31bd1f88551a9807504db42c8eb56248fb7c0a1b7e8dfc5ff4c8ebe1645747 [none]
+[debug] [2023-07-14T16:18:44.597Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ff31bd1f88551a9807504db42c8eb56248fb7c0a1b7e8dfc5ff4c8ebe1645747 [stream]
+[debug] [2023-07-14T16:18:44.598Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/99d5650803a9e9f2e64eb5726f7f6c3237a60d598db0a65c574205d3eac96536 [none]
+[debug] [2023-07-14T16:18:44.598Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/99d5650803a9e9f2e64eb5726f7f6c3237a60d598db0a65c574205d3eac96536 [stream]
+[debug] [2023-07-14T16:18:44.600Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/999333e8af2fcf9d79a53f4d658b2b0f0796615bd09c903f4eb762b53021f6e9 [none]
+[debug] [2023-07-14T16:18:44.600Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/999333e8af2fcf9d79a53f4d658b2b0f0796615bd09c903f4eb762b53021f6e9 [stream]
+[debug] [2023-07-14T16:18:44.601Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/52aa9cd881a20e063b758ad368e341c910dfe595ade78876dc380c67033820d5 [none]
+[debug] [2023-07-14T16:18:44.602Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/52aa9cd881a20e063b758ad368e341c910dfe595ade78876dc380c67033820d5 [stream]
+[debug] [2023-07-14T16:18:44.603Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ae32d499ca981e4e30a52b148f95b8a8528e798a2399c766636d0463a1086651 [none]
+[debug] [2023-07-14T16:18:44.603Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ae32d499ca981e4e30a52b148f95b8a8528e798a2399c766636d0463a1086651 [stream]
+[debug] [2023-07-14T16:18:44.604Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4 [none]
+[debug] [2023-07-14T16:18:44.605Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4 [stream]
+[debug] [2023-07-14T16:18:44.606Z] [hosting][populate queue][FINAL] {"max":1313,"min":1313,"avg":1313,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1323}
+[debug] [2023-07-14T16:18:44.606Z] [hosting] uploads queued: 6
+[debug] [2023-07-14T16:18:46.653Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/52aa9cd881a20e063b758ad368e341c910dfe595ade78876dc380c67033820d5 200
+[debug] [2023-07-14T16:18:46.654Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/52aa9cd881a20e063b758ad368e341c910dfe595ade78876dc380c67033820d5 [stream]
+[debug] [2023-07-14T16:18:46.742Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ae32d499ca981e4e30a52b148f95b8a8528e798a2399c766636d0463a1086651 200
+[debug] [2023-07-14T16:18:46.743Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ae32d499ca981e4e30a52b148f95b8a8528e798a2399c766636d0463a1086651 [stream]
+[debug] [2023-07-14T16:18:46.860Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/99d5650803a9e9f2e64eb5726f7f6c3237a60d598db0a65c574205d3eac96536 200
+[debug] [2023-07-14T16:18:46.860Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/99d5650803a9e9f2e64eb5726f7f6c3237a60d598db0a65c574205d3eac96536 [stream]
+[debug] [2023-07-14T16:18:47.000Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ff31bd1f88551a9807504db42c8eb56248fb7c0a1b7e8dfc5ff4c8ebe1645747 200
+[debug] [2023-07-14T16:18:47.000Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/ff31bd1f88551a9807504db42c8eb56248fb7c0a1b7e8dfc5ff4c8ebe1645747 [stream]
+[debug] [2023-07-14T16:18:59.481Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/999333e8af2fcf9d79a53f4d658b2b0f0796615bd09c903f4eb762b53021f6e9 200
+[debug] [2023-07-14T16:18:59.482Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/999333e8af2fcf9d79a53f4d658b2b0f0796615bd09c903f4eb762b53021f6e9 [stream]
+[debug] [2023-07-14T16:19:31.246Z] [uploadQueue] Retrying task 0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4
+[debug] [2023-07-14T16:19:31.248Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4 [none]
+[debug] [2023-07-14T16:19:31.248Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/nearbys2/versions/a7778860866959c7/files/0512c171be2841a1f2b0a5320a12d64830bf9b7e33d851dc6dd92516dd84b0e4 [stream]
