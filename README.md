@@ -1,5 +1,7 @@
 
-# Nearby 2.0
+# Nearby 2.5
+
+[UPDATE] Nearby 2.5 comes with a better UI and responsiveness.
 
 Share files seemlessly within 2 or more devices, like share images from mobile to pc, copy text from pc to mobile, share documents on the go and do more...
 A simple ecosystem embedded in web-app.
