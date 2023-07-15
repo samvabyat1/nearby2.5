@@ -25,3 +25,9 @@ A simple ecosystem embedded in web-app.
 ## Support
 
 For support, email samvbyat1@gmail.com.
+
+
+## Authors
+
+- [@samvabyat1](https://github.com/samvabyat1)
+
