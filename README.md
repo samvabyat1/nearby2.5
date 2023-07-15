@@ -6,6 +6,13 @@
 Share files seemlessly within 2 or more devices, like share images from mobile to pc, copy text from pc to mobile, share documents on the go and do more...
 A simple ecosystem embedded in web-app.
 
+> The new version 2.5 comes with more responsive and more attractive user interface which auto-adjusts itself according to the screen size.
+
+
+Web-app deploying at:
+```
+nearbys2.web.app
+```
 
 ## Templates
 
